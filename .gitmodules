@@ -1,0 +1,3 @@
+[submodule "amazon-catalog"]
+	path = amazon-catalog
+	url = https://github.com/samuelc92/amazon-catalog
