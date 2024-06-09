@@ -1,0 +1,11 @@
+version: 1
+common:
+  resourcesPath: ./components/
+apps:
+  - appID: amazon-catalog
+    appDirPath: ./amazon-catalog/src/Amazon.Catalog.WebApi/
+    appPort: 7006
+    command: ["dotnet", "run"]
+  - appID: amazon-basket
+    appDirPath: ./amazon-basket/src/Amazon.Basket.Api/
+    command: ["dotnet", "run"]
