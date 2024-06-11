@@ -8,4 +8,5 @@ apps:
     command: ["dotnet", "run"]
   - appID: amazon-basket
     appDirPath: ./amazon-basket/src/Amazon.Basket.Api/
+    appPort: 5234
     command: ["dotnet", "run"]
