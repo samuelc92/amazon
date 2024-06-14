@@ -1,0 +1,15 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: database
+spec:
+  type: state.mongodb
+  version: v1
+  metadata:
+  - name: host
+    value: <REPLACE-WITH-HOST> # Required unless "server" field is set . Example: "mongo-mongodb.default.svc.cluster.local:27017"
+  - name: databaseName
+    value: daprStore # Optional. default: "daprStore"
+  # Uncomment this if you wish to use MongoDB as a state store for actors (optional)
+  #- name: actorStateStore
+  #  value: "true"

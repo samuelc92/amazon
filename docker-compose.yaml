@@ -1,0 +1,35 @@
+version: '3.7'
+
+services:
+  mongodb1:
+    image: mongo
+    container_name: mongodb1
+    restart: always
+    command: mongod --replSet rs0 --bind_ip_all
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data/mongodb1:/data/db
+      - ./data/mongodb1_config:/data/configdb
+
+  mongodb2:
+    image: mongo
+    container_name: mongodb2
+    restart: always
+    command: mongod --replSet rs0 --bind_ip_all
+    ports:
+      - "27018:27017"
+    volumes:
+      - ./data/mongodb2:/data/db
+      - ./data/mongodb2_config:/data/configdb
+
+  mongodb3:
+    image: mongo
+    container_name: mongodb3
+    restart: always
+    command: mongod --replSet rs0 --bind_ip_all
+    ports:
+      - "27019:27017"
+    volumes:
+      - ./data/mongodb3:/data/db
+      - ./data/mongodb3_config:/data/configdb
