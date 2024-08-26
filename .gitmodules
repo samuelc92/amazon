@@ -4,3 +4,6 @@
 [submodule "amazon-basket"]
 	path = amazon-basket
 	url = https://github.com/samuelc92/amazon-basket
+[submodule "amazon-utils"]
+	path = amazon-utils
+	url = https://github.com/samuelc92/amazon-utils
