@@ -7,3 +7,6 @@
 [submodule "amazon-utils"]
 	path = amazon-utils
 	url = https://github.com/samuelc92/amazon-utils
+[submodule "amazon-devops"]
+	path = amazon-devops
+	url = https://github.com/samuelc92/amazon-devops.git
